@@ -18,5 +18,5 @@ const formattedHours=hours % 12  || 12;
 const formattedTime='$(month)/$(day)/%(year),$(hours):$(minutes):$(seconds)';
 timerElement.textContent=formattedTime;
 }
-setInerval(updateTime,1000);
+setInterval(updateTime,1000);
 updateTime();
