@@ -2,7 +2,7 @@
 function updateTime() {
 	
 
-const timerElement=document.getElementById("#timer");
+const timerElement=document.getElementById("timer");
 
 const now=new Date();
 const day=String(now.getDate()).padStart(2,"0");
@@ -18,5 +18,5 @@ const formattedHours=hours % 12  || 12;
 const formattedTime='${month}/${day}/${year},${hours}:${minutes}:${seconds}';
 timerElement.textContent=formattedTime;
 }
-setInterval(updateTime,1000)
+setInterval(updateTime,1000);
 updateTime();
