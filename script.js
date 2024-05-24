@@ -2,7 +2,7 @@
 function updateTime() {
 	
 
-const timerElement=document.getElementById("timer");
+const timerElement=document.getElementById("#timer");
 
 const now=new Date();
 const day=String(now.getDate()).padStart(2,"0");
