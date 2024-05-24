@@ -15,8 +15,8 @@ const seconds=String(now.getSeconds()).padStart(2,"0");
 const ampm=hours >=12 ? "PM" : "AM";
 
 const formattedHours=hours % 12  || 12;
-const formattedTime='${month}/${day}/${year},${hours}:${minutes}:${seconds}';
+const formattedTime='${month}/${day}/${year}, ${formattedHours}:${minutes}:${seconds} ${ampm}';
 timerElement.textContent=formattedTime;
 }
-// setInterval(updateTime,1000);
-updateTime();
+setInterval(updateTime,1000);
+// updateTime();
